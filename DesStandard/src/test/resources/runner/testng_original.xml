@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- <suite name="Suite" parallel="tests"> -->
+<suite name="Suite" >
+  <test name="Test">
+    <classes>
+    	<class name="runner.RunCuke"/>
+    </classes>
+  </test> 
+  <!-- <test name="Test2">
+    <classes>
+    	<class name="runner.RunCuke2"/>
+    </classes>
+  </test> 
+  <test name="Test3">
+    <classes>
+    	<class name="runner.RunCuke3"/>
+    </classes>
+  </test> 
+  <test name="Test4">
+    <classes>
+    	<class name="runner.RunCuke4"/>
+    </classes>
+  </test>   -->
+</suite> <!-- Suite -->

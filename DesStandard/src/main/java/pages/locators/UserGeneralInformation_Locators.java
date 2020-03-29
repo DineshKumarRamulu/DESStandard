@@ -35,7 +35,7 @@ public class UserGeneralInformation_Locators {
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Authentication')]//following::div[2]/div/div/div[2]/div[3]/input//following::div[1]/div/div/div/a")
 	public WebElement txt_RolesLink;
 
-	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Select All')]/../div")
+	@FindBy(how = How.XPATH, using = "//div[@class='select-all-user']/label/div")
 	public WebElement checkbox_SelectAll;
 
 	@FindBy(how = How.XPATH, using = "//div[@class='modal-dialog ']/div/div[3]/button[1]")

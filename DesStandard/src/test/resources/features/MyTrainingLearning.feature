@@ -4,7 +4,7 @@
 #Total Scenarios : 10
 Feature: Regression testing to validate MyTraining Module and Remote Launch Success
 
-  @Regression_Learning
+  @Regression_Learnings
   Scenario Outline: Validate HTML5 Additional Learning Course Launch Successful
     Given I am on Login Page "<URL>" of DES UAT Site
     And I Enter the UserID "<UserID>" and password "<Password>"

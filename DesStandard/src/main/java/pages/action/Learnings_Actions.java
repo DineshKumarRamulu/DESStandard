@@ -87,7 +87,7 @@ public class Learnings_Actions {
 
 				SeleniumDriver.getdriver().findElement(By.xpath("//div[@id='eng_btn_user']")).click();
 
-				SeleniumDriver.getdriver().findElement(By.xpath("//button[@id='eng_btn_exit']")).click();
+				SeleniumDriver.getdriver().findElement(By.xpath("//span[text()='Course Exit']")).click();
 
 				SeleniumDriver.getdriver()
 						.findElement(By.xpath("(//button[@class='eng_global_button skn_btn_container'])[1]")).click();
@@ -123,7 +123,7 @@ public class Learnings_Actions {
 
 				SeleniumDriver.getdriver().findElement(By.xpath("//div[@id='eng_btn_user']")).click();
 
-				SeleniumDriver.getdriver().findElement(By.xpath("//button[@id='eng_btn_exit']")).click();
+				SeleniumDriver.getdriver().findElement(By.xpath("//span[text()='Course Exit']")).click();
 
 				// SeleniumDriver.getdriver().findElement(By.xpath("(//button[@class='eng_global_button
 				// skn_btn_container'])[1]")).click();
@@ -153,6 +153,7 @@ public class Learnings_Actions {
 	}
 
 	public void CourseSearchListing(String CourseName) {
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("splash-screen")));
 		SeleniumDriver.getdriver().findElement(By.xpath("//div[@id='emp-content']//input[1]")).sendKeys(CourseName);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("splash-screen")));
 	}

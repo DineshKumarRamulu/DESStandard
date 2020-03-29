@@ -24,7 +24,7 @@ Feature: Regression testing to validate ContentManagement Module
 
     Examples: 
       | URL                        | UserID | Password | CurriculumName | CourseName   |
-      | http://ss50.claritynet.com |   3333 | c04st4l  | automation     | Food Safety: |
+      | http://ss50.claritynet.com |   3333 | zzzz     | automation     | Food Safety: |
 
   @Regression_ContentManagement
   Scenario Outline: Validate ML course customease can be done successfully by previewing the course
@@ -46,7 +46,7 @@ Feature: Regression testing to validate ContentManagement Module
 
     Examples: 
       | URL                        | UserID | Password | CurriculumName | CourseName    |
-      | http://ss50.claritynet.com |   3333 | c04st4l  | automation     | Pausa para el |
+      | http://ss50.claritynet.com |   3333 | zzzz     | automation     | Pausa para el |
 
   @Regression_ContentManagement
   Scenario Outline: Validate the course can be published successfully in the HTML5 Authoring Tool
@@ -67,7 +67,7 @@ Feature: Regression testing to validate ContentManagement Module
 
     Examples: 
       | URL                        | UserID | Password | CourseName                    |
-      | http://ss50.claritynet.com |   3333 | c04st4l  | Food Safety: Allergen Control |
+      | http://ss50.claritynet.com |   3333 | zzzz     | Food Safety: Allergen Control |
 
   @Regression_ContentManagement
   Scenario Outline: Validate the course can be Imported successfully in the HTML5 Authoring Tool
@@ -85,4 +85,4 @@ Feature: Regression testing to validate ContentManagement Module
 
     Examples: 
       | URL                        | UserID | Password | CourseName                    |
-      | http://ss50.claritynet.com |   3333 | c04st4l  | Food Safety: Allergen Control |
+      | http://ss50.claritynet.com |   3333 | zzzz     | Food Safety: Allergen Control |

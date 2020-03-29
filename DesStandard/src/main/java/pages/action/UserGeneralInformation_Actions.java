@@ -41,11 +41,13 @@ public class UserGeneralInformation_Actions {
 		javaScriptExecutor.executeScript("arguments[0].click();", userGeneralInformation_Locators.txt_Authentication);
 		userGeneralInformation_Locators.txtbox_Password.sendKeys(password);
 		userGeneralInformation_Locators.txtbox_ConfirmPassword.sendKeys(Confirmpwd);
+		
 
 	}
 
 	public void rolesDetails(String rolename) throws InterruptedException {
-
+        
+		javaScriptExecutor.executeScript("arguments[0].scrollIntoView();", userGeneralInformation_Locators.txt_RolesLink);
 		javaScriptExecutor.executeScript("arguments[0].click();", userGeneralInformation_Locators.txt_RolesLink);
 		javaScriptExecutor.executeScript("arguments[0].click();", userGeneralInformation_Locators.checkbox_SelectAll);
 		Thread.sleep(2000);
@@ -163,7 +165,7 @@ public class UserGeneralInformation_Actions {
 
 	public void clickRegionGroupLink() {
 		javaScriptExecutor.executeScript("arguments[0].scrollIntoView();",
-				userGeneralInformation_Locators.link_RegionGroup);
+		userGeneralInformation_Locators.link_RegionGroup);
 		userGeneralInformation_Locators.link_RegionGroup.click();
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("splash-screen")));
 	}
@@ -175,7 +177,7 @@ public class UserGeneralInformation_Actions {
 		// userGeneralInformation_Locators.txtbox_RegionGroupSearch.sendKeys(Keys.ENTER);
 		// Thread.sleep(10000);
 		javaScriptExecutor.executeScript("arguments[0].click();",
-				userGeneralInformation_Locators.txtbox_RegionGroupSearchText);
+		userGeneralInformation_Locators.txtbox_RegionGroupSearchText);
 		userGeneralInformation_Locators.txtbox_RegionGroupSearchText.sendKeys(value);
 		userGeneralInformation_Locators.txtbox_RegionGroupSearchText.click();
 		Thread.sleep(1000);

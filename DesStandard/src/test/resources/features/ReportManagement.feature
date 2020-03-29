@@ -19,7 +19,7 @@ Feature: Regression testing to validate ReportManagement Module
 
     Examples: 
       | URL                          | UserID | Password | ReportName                          |
-      | http://ss50.claritynet.com   |   3333 | c04st4l  | User Planned Vs Completed Report    |
+      | http://ss50.claritynet.com   |   3333 | zzzz     | User Planned Vs Completed Report    |
 
   @Regression_Reports
   Scenario Outline: Validate My Training Status Report Process Success
@@ -36,7 +36,7 @@ Feature: Regression testing to validate ReportManagement Module
 
     Examples: 
       | URL                          | UserID | Password | ReportName         |
-      | http://ss50.claritynet.com   |   3333 | c04st4l  | My Training Status |
+      | http://ss50.claritynet.com   |   3333 | zzzz     | My Training Status |
 
   @Regression_Reports
   Scenario Outline: Validate User Training Status - Enhanced Report Process Success
@@ -53,7 +53,7 @@ Feature: Regression testing to validate ReportManagement Module
 
     Examples: 
       | URL                          | UserID | Password | ReportName                      |
-      | http://ss50.claritynet.com   |   3333 | c04st4l  | User Training Status - Enhanced |
+      | http://ss50.claritynet.com   |   3333 | zzzz     | User Training Status - Enhanced |
 
   @Regression_Reports
   Scenario Outline: Validate My Test Scores Report Process Success
@@ -70,7 +70,7 @@ Feature: Regression testing to validate ReportManagement Module
 
     Examples: 
       | URL                          | UserID | Password | ReportName     |
-      | http://ss50.claritynet.com   |   3333 | c04st4l  | My Test Scores |
+      | http://ss50.claritynet.com   |   3333 | zzzz     | My Test Scores |
 
   @Regression_Reports
   Scenario Outline: Validate My Test Scores - Enhanced Report Process Success
@@ -87,7 +87,7 @@ Feature: Regression testing to validate ReportManagement Module
 
     Examples: 
       | URL                          | UserID | Password | ReportName                |
-      | http://ss50.claritynet.com   |   3333 | c04st4l  | My Test Scores - Enhanced |
+      | http://ss50.claritynet.com   |   3333 | zzzz     | My Test Scores - Enhanced |
 
   @Regression_Reports
   Scenario Outline: Validate User Planned Vs Completed Custom Report Create and Process Success
@@ -115,7 +115,7 @@ Feature: Regression testing to validate ReportManagement Module
 
     Examples: 
       | URL                          | UserID | Password | ReportName                       | Report Title                                  | CustomReportName                              |
-      | http://ss50.claritynet.com   |   3333 | c04st4l  | User Planned Vs Completed Report | Automation30_User Planned Vs Completed Report | Automation30_User Planned Vs Completed Report |
+      | http://ss50.claritynet.com   |   3333 | zzzz     | User Planned Vs Completed Report | Automation30_User Planned Vs Completed Report | Automation30_User Planned Vs Completed Report |
 
   @Regression_Reports
   Scenario Outline: Validate Unformatted User Planned Vs Completed Report Process Success
@@ -134,7 +134,7 @@ Feature: Regression testing to validate ReportManagement Module
 
     Examples: 
       | URL                          | UserID | Password | ReportName                       |
-      | http://ss50.claritynet.com   |   3333 | c04st4l  | User Planned Vs Completed Report |
+      | http://ss50.claritynet.com   |   3333 | zzzz     | User Planned Vs Completed Report |
 
   @Regression_Reports
   Scenario Outline: Validate DB User Course Status Chart Report Process Success
@@ -151,9 +151,9 @@ Feature: Regression testing to validate ReportManagement Module
 
     Examples: 
       | URL                          | UserID | Password | ReportName            |
-      | http://ss50.claritynet.com   |   3333 | c04st4l  | DB User Course Status |
+      | http://ss50.claritynet.com   |   3333 | zzzz     | DB User Course Status |
 
-  @Regression_Reports
+  @Regression_Reportss
   Scenario Outline: Validate User Planned Vs Completed Report Process Success and records exported to xls,pdf,xlsx,cvs
     Given I am on Login Page "<URL>" of DES UAT Site
     And I Enter the UserID "<UserID>" and password "<Password>"
@@ -166,8 +166,8 @@ Feature: Regression testing to validate ReportManagement Module
     And Click the Process Report button in the Report Filter Criteria Page
     Then The "<ReportName>" Should be displayed inside the processed Report
     And Click the ExportTo DropDown and download all the export file formats
-    Then All the exported file formats should be downloaded to the default "<DownloadPath>"
+    Then All the exported file formats should be downloaded to the default "<DownloadPath>" 
 
     Examples: 
       | URL                          | UserID | Password | ReportName                       | DownloadPath                 |
-      | http://ss50.claritynet.com   |   3333 | c04st4l  | User Planned Vs Completed Report | C:\\Users\\cst065\\Downloads |
+      | http://ss50.claritynet.com   |   3333 | zzzz     | User Planned Vs Completed Report | C:\Users\DSS3342\Downloads   |

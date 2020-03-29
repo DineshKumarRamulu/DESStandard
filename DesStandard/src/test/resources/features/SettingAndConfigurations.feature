@@ -17,7 +17,7 @@ Feature: Regression testing to validate Setting and Configurations Management Mo
 
     Examples:  
       | URL                          | UserID | Password |LogoutTime|
-      | http://ss50.claritynet.com   |   3333 | c04st4l  |90        |
+      | http://ss50.claritynet.com   |   3333 | zzzz     |90        |
       
       
 

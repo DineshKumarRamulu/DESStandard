@@ -20,7 +20,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(plugin = { "json:target/RunCuke/cucumber.json", "pretty", "html:target/RunCuke/cucumber.html",
 		"com.cucumber.listener.ExtentCucumberFormatter" }, features = "src/test/resources/features", monochrome = true, glue = "steps",
-		tags = { "@Regression_Learning"},
+		tags = {"@Regression_UserManagements"},
 		//tags = { "@Regression_UserManagement,@Regression_TrainingManagement,@Regression_SettingandConfigurationsManagement,@Regression_Reports,@Regression_Learning,@Regression_ContentManagement" },
 		dryRun = false)
 

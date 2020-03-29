@@ -2,48 +2,50 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1384678" started-at="2019-09-13T06:01:12Z" finished-at="2019-09-13T06:24:17Z">
+  <suite name="Suite" duration-ms="196313" started-at="2020-03-29T15:03:24Z" finished-at="2020-03-29T15:06:40Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@5e3a8624]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@75222b]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="1384678" started-at="2019-09-13T06:01:12Z" finished-at="2019-09-13T06:24:17Z">
+    <test name="Test" duration-ms="196313" started-at="2020-03-29T15:03:24Z" finished-at="2020-03-29T15:06:40Z">
       <class name="runner.RunCuke">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.RunCuke@5e3a8624]" name="setUpClass" is-config="true" duration-ms="187" started-at="2019-09-13T11:31:12Z" finished-at="2019-09-13T11:31:12Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.RunCuke@75222b]" name="setUpClass" is-config="true" duration-ms="4555" started-at="2020-03-29T20:33:24Z" finished-at="2020-03-29T20:33:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:runner.RunCuke@5e3a8624]" name="setup" is-config="true" duration-ms="82" started-at="2019-09-13T11:31:12Z" finished-at="2019-09-13T11:31:12Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:runner.RunCuke@75222b]" name="setup" is-config="true" duration-ms="900" started-at="2020-03-29T20:33:28Z" finished-at="2020-03-29T20:33:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@5e3a8624]" name="feature" duration-ms="1384178" started-at="2019-09-13T11:31:13Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-09-13T11:54:17Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunCuke@75222b]" name="feature" duration-ms="189057" started-at="2020-03-29T20:33:31Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-29T20:36:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Regression testing to validate MyTraining Module and Remote Launch Success]]>
+                <![CDATA[Regression testing to validate ReportManagement Module]]>
               </value>
             </param>
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=77.0.3865.75)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window
+  (Session info: chrome=80.0.3987.149)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PF1L9LDP', ip: '10.145.49.157', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+System info: host: 'SYS', ip: '192.168.0.107', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DSS3342\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52130}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2de879c478ad1f4f3ca2ac69e7750064]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Dinesh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52080}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c6248c43d5e4fa9fb566724cd7485ab3
+*** Element info: {Using=xpath, value=//span[contains(text(),'No Records')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=77.0.3865.75)
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchWindowException: no such window
+  (Session info: chrome=80.0.3987.149)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PF1L9LDP', ip: '10.145.49.157', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+System info: host: 'SYS', ip: '192.168.0.107', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DSS3342\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52130}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2de879c478ad1f4f3ca2ac69e7750064
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Dinesh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52080}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c6248c43d5e4fa9fb566724cd7485ab3
+*** Element info: {Using=xpath, value=//span[contains(text(),'No Records')]}
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -56,16 +58,28 @@ Session ID: 2de879c478ad1f4f3ca2ac69e7750064
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=77.0.3865.75)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window
+  (Session info: chrome=80.0.3987.149)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'PF1L9LDP', ip: '10.145.49.157', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+System info: host: 'SYS', ip: '192.168.0.107', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_191'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: C:\Users\DSS3342\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52130}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2de879c478ad1f4f3ca2ac69e7750064
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Dinesh\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52080}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c6248c43d5e4fa9fb566724cd7485ab3
+*** Element info: {Using=xpath, value=//span[contains(text(),'No Records')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -76,18 +90,20 @@ Session ID: 2de879c478ad1f4f3ca2ac69e7750064
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
-	at pages.action.Learnings_Actions.switchwindowforRemoteCourse(Learnings_Actions.java:110)
-	at steps.LearningCourse_Steps.switch_to_the_Remote_Menu_Page(LearningCourse_Steps.java:37)
-	at ✽.And Switch to the Remote "Chemical Safety:" Menu Page(MyTrainingLearning.feature:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at pages.action.Reports_Actions.ReportNamevalidation(Reports_Actions.java:126)
+	at steps.ReportManagement_Steps.the_Should_be_displayed_inside_the_processed_Report(ReportManagement_Steps.java:47)
+	at ✽.Then The "User Planned Vs Completed Report" Should be displayed inside the processed Report(ReportManagement.feature:167)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunCuke@5e3a8624]" name="tearDownClass" is-config="true" duration-ms="139" started-at="2019-09-13T11:54:17Z" finished-at="2019-09-13T11:54:17Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunCuke@75222b]" name="tearDownClass" is-config="true" duration-ms="126" started-at="2020-03-29T20:36:40Z" finished-at="2020-03-29T20:36:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -19,16 +19,16 @@ public class SeleniumDriver {
 	private final static int pageloadtimeout = 60;
 
 	private SeleniumDriver() {
-		LaunchBrowser("chrome");
+		LaunchBrowser("Chrome");
 	}
 
 	protected void LaunchBrowser(String browser) {
 		if (browser.equalsIgnoreCase("Chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Automation\\Drivers\\Chrome\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "E:\\Automation\\DESStandard\\DesStandard\\Drivers\\chromedriver.exe");
 
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "C:\\Automation\\Drivers\\IE\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\Automation\\Drivers\\Firefox\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		} else if (browser.equalsIgnoreCase("IE")) {
 			DesiredCapabilities caps = DesiredCapabilities.internetExplorer();

@@ -115,7 +115,8 @@ public class ContentManagement_Actions {
 				SeleniumDriver.getdriver().findElement(By.xpath("//button[@id='eng_btn_PreviewSB']")).click();
 				Thread.sleep(5000);
 				SeleniumDriver.getdriver().findElement(By.xpath("//button[@id='eng_btn_ReturnSB']")).click();
-				SeleniumDriver.getdriver().findElement(By.xpath("//div[@id='eng_exit']")).click();
+				SeleniumDriver.getdriver().findElement(By.xpath("//span[text()='Course Exit']")).click();
+				Thread.sleep(2000);
 				SeleniumDriver.getdriver().findElement(By.xpath("//button[text()='YES']")).click();
 
 			}

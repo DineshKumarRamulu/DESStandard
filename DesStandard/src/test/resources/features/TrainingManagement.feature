@@ -32,7 +32,7 @@ Feature: Regression testing to validate Training Management Module
 
     Examples: 
       | URL                        | UserID | Password | CurriculumName | CurriculumID | CourseID     | UserID |
-      | http://ss50.claritynet.com |   3333 | c04st4l  | test052        | test052      | Food Safety: |   3333 |
+      | http://ss50.claritynet.com |   3333 | zzzz     | test053        | test053      | Food Safety: |   3333 |
 
   @Regression_TrainingManagement
   Scenario Outline: Validate Edit Course and assign user to that course
@@ -52,7 +52,7 @@ Feature: Regression testing to validate Training Management Module
 
     Examples: 
       | URL                        | UserID | Password | CourseName   | UserID |
-      | http://ss50.claritynet.com |   3333 | c04st4l  | Food Safety: |   3333 |
+      | http://ss50.claritynet.com |   3333 | zzzz     | Food Safety: |   3333 |
 
   @Regression_TrainingManagement
   Scenario Outline: Validate Edit Course Options template and course options template Update success
@@ -69,7 +69,7 @@ Feature: Regression testing to validate Training Management Module
 
     Examples: 
       | URL                        | UserID | Password | TemplateName                   |
-      | http://ss50.claritynet.com |   3333 | c04st4l  | Default Course Option Template |
+      | http://ss50.claritynet.com |   3333 | zzzz     | Default Course Option Template |
 
   @Regression_TrainingManagement
   Scenario Outline: Validate Classroom handson update success
@@ -90,4 +90,4 @@ Feature: Regression testing to validate Training Management Module
 
     Examples: 
       | URL                        | UserID | Password | CourseName   | UserID  | CourseStatus |
-      | http://ss50.claritynet.com |   3333 | c04st4l  | Food Safety: | coastal | Mastered     |
+      | http://ss50.claritynet.com |   3333 | zzzz     | Food Safety: | coastal | Mastered     |

@@ -6,6 +6,7 @@ import java.util.Date;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -120,10 +121,36 @@ public class Reports_Actions {
 	}
 
 	public void ReportNamevalidation(String expected) {
-		String actual = reports_Locators.txt_ReportName.getText();
-		System.out.println(actual);
-		Assert.assertEquals(actual, expected);
+		
+		//String actual = reports_Locators.txt_ReportName.getText();
+		int size = SeleniumDriver.getdriver().findElements(By.xpath("//span[contains(text(),'No Records')]")).size();
+		int reportnamesize = SeleniumDriver.getdriver().findElements(By.xpath("(//div[@class='wrapword'])[1]")).size();
+		//try
+		//{
+		if(reportnamesize==1)
+		{
+			String actual = reports_Locators.txt_ReportName.getText();
+			System.out.println(actual);
+			Assert.assertEquals(actual, expected);
+		}
+		else if(size==1) 
+		{
+			System.out.println("No records element available");
+		}
+		else
+		{
+			System.out.println("Error in report");
+		}
+		//}
+		//catch(NoSuchElementException e)
+		//{
+		//	System.out.println("No such element exception message");
+		//}
 
+		
+		//System.out.println(actual);
+		//Assert.assertEquals(actual, expected);
+        		       
 	}
 
 	public void ReportSavevalidation(String expected) {
@@ -143,27 +170,27 @@ public class Reports_Actions {
 	public void Click_ExportToAllFileFormats() throws InterruptedException {
 
 		reports_Locators.txt_ExportTo.click();
-		// Thread.sleep(2000);
+		Thread.sleep(2000);
 		reports_Locators.txt_FormattedXLS.click();
-		// Thread.sleep(2000);
+		Thread.sleep(2000);
 		reports_Locators.txt_ExportTo.click();
-		// Thread.sleep(2000);
+		Thread.sleep(2000);
 		reports_Locators.txt_FormattedXLSX.click();
-		// Thread.sleep(2000);
+		Thread.sleep(2000);
 		reports_Locators.txt_ExportTo.click();
-		// Thread.sleep(2000);
+		Thread.sleep(2000);
 		reports_Locators.txt_PDF.click();
-		// Thread.sleep(2000);
+		Thread.sleep(2000);
 		reports_Locators.txt_ExportTo.click();
-		// Thread.sleep(2000);
+		Thread.sleep(2000);
 		reports_Locators.txt_UnFormattedXLS.click();
-		// Thread.sleep(2000);
+		Thread.sleep(2000);
 		reports_Locators.txt_ExportTo.click();
-		// Thread.sleep(2000);
+		Thread.sleep(2000);
 		reports_Locators.txt_UnFormattedXLSX.click();
-		// Thread.sleep(2000);
+		Thread.sleep(2000);
 		reports_Locators.txt_ExportTo.click();
-		// Thread.sleep(2000);
+		Thread.sleep(2000);
 		reports_Locators.txt_CSV.click();
 		Thread.sleep(5000);
 	}

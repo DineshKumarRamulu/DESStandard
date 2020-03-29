@@ -19,7 +19,7 @@ Feature: Regression testing to validate UserMangement Module
 
     Examples: 
       | URL                        | UserID | Password | NewUserID | LastName | FirstName | EmailID            | ConfirmEmailID     | Password | ConfirmPassword | RoleName      |
-      | http://ss50.claritynet.com |   3333 | c04st4l  | Din50     | kumar    | Dinesh    | dinesh@coastal.com | dinesh@coastal.com | c04st4l  | c04st4l         | Administrator |
+      | http://ss50.claritynet.com |   3333 | zzzz     | peter     | peterln    | peterfn    | peter@coastal.com | peter@coastal.com | zzzz     | zzzz            | Administrator |
 
   @Regression_UserManagement
   Scenario Outline: Validate Existing User by update and save
@@ -38,7 +38,7 @@ Feature: Regression testing to validate UserMangement Module
 
     Examples: 
       | URL                        | UserID | Password | SearchUserID | language |
-      | http://ss50.claritynet.com |   3333 | c04st4l  | Din48        | English  |
+      | http://ss50.claritynet.com |   3333 | zzzz     | Din55        | English  |
 
   @Regression_UserManagement
   Scenario Outline: Validate Add NewGroup
@@ -53,7 +53,7 @@ Feature: Regression testing to validate UserMangement Module
 
     Examples: 
       | URL                        | UserID | Password | GroupValue         |
-      | http://ss50.claritynet.com |   3333 | c04st4l  | AutomationRegion48 |
+      | http://ss50.claritynet.com |   3333 | zzzz     | AutomationRegion55 |
 
   @Regression_UserManagement
   Scenario Outline: Validate Add NewRole
@@ -70,7 +70,7 @@ Feature: Regression testing to validate UserMangement Module
 
     Examples: 
       | URL                        | UserID | Password | RoleName         |
-      | http://ss50.claritynet.com |   3333 | c04st4l  | AutomationRole48 |
+      | http://ss50.claritynet.com |   3333 | zzzz     | AutomationRole55 |
 
   @Regression_UserManagement
   Scenario Outline: Validate Existing User by Navigating multiple tabs and Update and Save
@@ -97,7 +97,7 @@ Feature: Regression testing to validate UserMangement Module
 
     Examples: 
       | URL                        | UserID | Password | SearchUserID | SearchValue        |
-      | http://ss50.claritynet.com |   3333 | c04st4l  | Din48        | AutomationRegion48 |
+      | http://ss50.claritynet.com |   3333 | zzzz     | Din55        | AutomationRegion55 |
 
   @Regression_UserManagement
   Scenario Outline: Validate Add New Custom Tab
@@ -117,4 +117,4 @@ Feature: Regression testing to validate UserMangement Module
 
     Examples: 
       | URL                        | UserID | Password | TabName             | ContentText       |
-      | http://ss50.claritynet.com |   3333 | c04st4l  | AutomationRoleTab48 | AutomationTesting |
+      | http://ss50.claritynet.com |   3333 | zzzz     | AutomationRoleTab55 | AutomationTesting |
